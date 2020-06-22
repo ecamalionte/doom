@@ -13,6 +13,10 @@
 (custom-set-variables
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
+;; customize avy to work on all windows
+(custom-set-variables
+ '(avy-all-windows t))
+
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
 ;;
