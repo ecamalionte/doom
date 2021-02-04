@@ -11,11 +11,16 @@
 
 ;; initiate emacs on fullscreen
 (custom-set-variables
- '(initial-frame-alist (quote ((fullscreen . maximized)))))
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(avy-all-windows t)
+ '(initial-frame-alist (quote ((fullscreen . maximized))))
+ '(package-selected-packages (quote (evil-multiedit prettier-js prettier))))
 
 ;; customize avy to work on all windows
-(custom-set-variables
- '(avy-all-windows t))
+
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
@@ -67,3 +72,19 @@
 
 
 (load! "bindings")
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+
+;; prettier
+(add-hook 'js2-mode-hook 'prettier-js-mode)
+(add-hook 'web-mode-hook 'prettier-js-mode)
+(add-hook 'typescript-mode-hook 'prettier-js-mode)
+(add-hook 'json-mode-hook 'prettier-js-mode)
+(add-hook 'scss-mode-hook 'prettier-js-mode)
+
+
