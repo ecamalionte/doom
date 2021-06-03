@@ -15,9 +15,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(avy-all-windows t)
+ '(avy-all-windows t t)
  '(initial-frame-alist (quote ((fullscreen . maximized))))
- '(package-selected-packages (quote (evil-multiedit prettier-js prettier))))
+ '(package-selected-packages
+   (quote
+    (emojify cmake-project evil-multiedit prettier-js prettier))))
 
 ;; customize avy to work on all windows
 
@@ -86,5 +88,3 @@
 (add-hook 'typescript-mode-hook 'prettier-js-mode)
 (add-hook 'json-mode-hook 'prettier-js-mode)
 (add-hook 'scss-mode-hook 'prettier-js-mode)
-
-
