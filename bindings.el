@@ -20,9 +20,9 @@
 
 ;; Remap alchemist create file and test
 (map! :leader
-      :nv "t c c" nil
+      :nv "t z f" nil
       :desc "Create file and test in other window"
-      :n "t c c" #'alchemist-project-toggle-file-and-tests-other-window)
+      :n "t z f" #'alchemist-project-toggle-file-and-tests-other-window)
 
 ;; Remap opening the sidebar
 (map! :leader

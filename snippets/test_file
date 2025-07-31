@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: test file
+# uuid: test_file
+# key: trigger-key
+# condition: t
+# --
+
+defmodule Module do
+  use Module.DataCase, async: true
+
+  describe "function/1" do
+    test "success call" do
+    end
+
+    test "failure call" do
+    end
+  end
+end
